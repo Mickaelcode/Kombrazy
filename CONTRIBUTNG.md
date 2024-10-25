@@ -1,10 +1,25 @@
 ## HOW TO CONTRIBUTE?
-* 1 - Fork this repository
-* 2 - Once forked in your github account, you can now clone it to the local
-git by the following command
-
+*`Check the Issues: Visit the Issues section of this repository to find tasks you can work on. Please comment on an issue to request assignment before starting.`*
+* 1 - [Fork](https://github.com/njaina/kombrazy/fork) this repository
+* 2 - Once forked to your GitHub account, clone it to your local machine using the following command:
 ```bash
-git clone https://github.com/<your-github-name>/<repository-name>
+  git clone https://github.com/<your-github-name>/<repository-name>
 ```
-* 3 - Create your own branch
-* 4 - When you achieve your task, you can push it and create a pull request in my **dev branch**
+* 3 - Install the dependance using your package manager, (eg. *npm*, *yarn*)
+```bash
+  npm install
+```
+  or
+```bash
+  yarn add
+```
+* 4 - Create your own branch using the following command:
+```bash
+  git checkout -b [branch_name]
+```
+* 5 - When you achieve your task, you can push it
+```bash
+  git push -u origin [branch_name]
+```
+* 6 - And create a pull request on my **dev branch**
+
