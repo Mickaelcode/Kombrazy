@@ -2,12 +2,13 @@ import React, { useState } from "react";
 import { Layout } from "./Layout";
 import { LeftsideLayout } from "./LeftsideLayout";
 import { RightsideLayout } from "./RightSideLayout";
+import ItemCard from "../ItemCard";
 
 const MainComponent = () => {
   const [middleContent, setMiddleContent] = useState<React.ReactNode>(<></>);
 
   const menuOptions = [
-    { label: "Dashboard", value: "dashboard" },
+    { label: "Cards", value: "Cards" },
     { label: "Reports", value: "reports" },
     { label: "Settings", value: "settings" },
   ];
@@ -20,8 +21,15 @@ const MainComponent = () => {
 
   const handleMenuSelect = (option: string) => {
     switch (option) {
-      case "dashboard":
-        setMiddleContent(<div>Dashboard Content</div>);
+      case "Cards":
+        setMiddleContent(
+          <ItemCard
+            title="My title"
+            subtitle="This is my subtitle"
+            status="Accepted"
+            content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia illum eius dicta. Ab est quasi eius sed consequatur laborum, is"
+          />,
+        );
         break;
       case "reports":
         setMiddleContent(<div>Reports Content</div>);
