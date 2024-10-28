@@ -3,6 +3,7 @@ import { Layout } from "./Layout";
 import { LeftsideLayout } from "./LeftsideLayout";
 import { RightsideLayout } from "./RightSideLayout";
 import ItemCard from "../ItemCard";
+import ProfileCard from "../ProfileCard";
 
 const MainComponent = () => {
   const [middleContent, setMiddleContent] = useState<React.ReactNode>(<></>);
@@ -23,12 +24,19 @@ const MainComponent = () => {
     switch (option) {
       case "Cards":
         setMiddleContent(
-          <ItemCard
-            title="My title"
-            subtitle="This is my subtitle"
-            status="Accepted"
-            content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia illum eius dicta. Ab est quasi eius sed consequatur laborum, is"
-          />,
+          <div className="w-full grid grid-cols-cardgrid gap-2">
+            <ProfileCard
+              name="Lionel Messi"
+              profession="Inter Miami player"
+            />
+            <ItemCard
+              title="My title"
+              subtitle="This is my subtitle"
+              status="Accepted"
+              content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia illum eius dicta. "
+            />
+          </div>
+          ,
         );
         break;
       case "reports":
