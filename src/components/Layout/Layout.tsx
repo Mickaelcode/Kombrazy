@@ -19,8 +19,8 @@ export const Layout = ({
         </div>
       </div>
       <div className="w-4/6 ">
-        <div className="h-full px-3 py-4 dark:bg-teal-900 ">
-          <div className="fixed ">{middleContent}</div>
+        <div className="h-full px-3 py-4 dark:bg-teal-900">
+          <div className="fixed w-full">{middleContent}</div>
         </div>
       </div>
       <div className="w-1/6 ">

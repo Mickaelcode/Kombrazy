@@ -7,14 +7,14 @@ interface ItemProps {
   content: string;
 }
 
-const ItemCard: React.FC<ItemProps> = ({
+const ItemCard: React.FC<ItemProps> = ({ 
   title,
   subtitle,
   status,
   content,
 }) => {
   return (
-    <div className="rounded w-72 border shadow shadow-gray-400">
+    <div className="rounded w-60 border shadow shadow-gray-400">
       <div className="flex gap-2 p-2 bg-gray-400 bg-opacity-15 items-center">
         <img
           src={ItemBg}
